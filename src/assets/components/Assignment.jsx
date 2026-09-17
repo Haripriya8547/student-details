@@ -29,7 +29,7 @@ function Assignment() {
     <Card id="assignments" className="shadow mb-4">
 
       <Card.Header>
-        <h4>📝 Assignment Details</h4>
+        <h4>Assignment Details</h4>
       </Card.Header>
 
       <Card.Body>

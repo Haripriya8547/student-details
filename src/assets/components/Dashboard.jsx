@@ -15,7 +15,7 @@ function Dashboard() {
                 Welcome to <span>EduManage</span>
               </h1>
 
-              <h2>Student Management System 🎓</h2>
+              <h2>Student Management System </h2>
 
               <p>
                 Manage student details, attendance, assignments,

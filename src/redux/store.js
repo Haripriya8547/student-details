@@ -1,11 +1,11 @@
-import {configureStore} from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "./userSlice";
-
+import studentReducer from "./studentSlice";
 
 const store = configureStore({
-    reducer:{
-        userState:userReducer,
-      
+    reducer: {
+        userState: userReducer,
+        studentState: studentReducer
     }
 });
 

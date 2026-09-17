@@ -1,5 +1,5 @@
 
-    import { useState } from "react";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
@@ -13,10 +13,10 @@ import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 
 
-function Register(){
+function Register() {
     const { Formik } = formik;
     const dispatch = useDispatch();
-    const Navigate=useNavigate();
+    const Navigate = useNavigate();
 
     const schema = yup.object().shape({
         fullname: yup.string().required("please enter fullname")
@@ -31,11 +31,11 @@ function Register(){
         values.role = "user";
         values.status = true;
         // console.log("values----->",values);        
-       dispatch( userRegister(values));
-       toast('registered successfuly');
-       Navigate();
+        dispatch(userRegister(values));
+        toast('registered successfuly');
+        Navigate("/");
 
-       
+
 
     }
 
@@ -45,7 +45,7 @@ function Register(){
         <Container>
             <Row >
                 <Col>
-                    <h2>User Register</h2>
+                    <h2 className="text-center">User Register</h2>
                 </Col>
             </Row>
             <Row md={4} className="m-3 justify-content-center">
@@ -121,7 +121,7 @@ function Register(){
                                         Register
                                     </Button>
                                 </div>
-                                <Link to="/register"> Already have an account? Login here! </Link>
+                                <Link to="/login"> Already have an account? Login here! </Link>
                             </Form>
                         )}
 

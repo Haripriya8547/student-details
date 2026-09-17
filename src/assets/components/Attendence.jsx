@@ -5,7 +5,7 @@ function Attendance() {
     <Card id="attendance" className="shadow mb-4">
 
       <Card.Header>
-        <h4>📊 Attendance Details</h4>
+        <h4> Attendance Details</h4>
       </Card.Header>
 
       <Card.Body>
